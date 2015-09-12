@@ -19,7 +19,7 @@ DataNueva$datetime <- strptime(paste(DataNueva$Date, DataNueva$Time), "%d/%m/%Y 
 Fechas <- c(as.Date("2007-02-01"), as.Date("2007-02-02")) 
 DataNueva <- DataNueva[as.Date(DataNueva$datetime) %in% Fechas,] 
 
-$$Plot being saved as png file
+##Plot being saved as png file
 png(filename = "plot1.png", width = 480, height = 480)
 hist(DataNueva$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
 dev.off() 
